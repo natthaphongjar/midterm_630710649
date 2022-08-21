@@ -129,16 +129,16 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            Text(
-              'Temperature Converter',
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
-            ),
-            SizedBox(
-              width: 1500.0,
-              child: Container(
+        child: Container(
+          padding: EdgeInsets.all(16.00),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              Text(
+                'Temperature Converter',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
+              ),
+              Container(
                   padding: EdgeInsets.all(16.00),
                   decoration: BoxDecoration(
                     color: Colors.white, //สีพื้นหลังของ Container
@@ -249,9 +249,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       )
                     ],
                   )),
-            ),
-            Text(Output,style: TextStyle(fontSize: 20),),
-          ],
+              Text(Output,style: TextStyle(fontSize: 20),),
+            ],
+          ),
         ),
       ),
     );
